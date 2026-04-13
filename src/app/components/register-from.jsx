@@ -138,13 +138,13 @@ export default function RegistrationForm() {
           <div style={{display:"flex", gap:"0.5rem", alignItems:"center"}}>
             {["/logo1.png","/logo2.png","/logo3.png"].map((s,i) => (
               <motion.div key={i}
-                style={{width:"2rem", height:"2rem", borderRadius:"6px", background:"rgba(255,255,255,0.07)", border:"1px solid rgba(255,255,255,0.1)", overflow:"hidden", padding:"0.2rem"}}
+                style={{width:"3.5rem", height:"3.5rem", borderRadius:"10px", background:"rgba(255,255,255,0.1)", border:"1px solid rgba(255,255,255,0.15)", overflow:"hidden", padding:"0.3rem"}}
                 initial={{opacity:0, scale:0.8}} animate={{opacity:1, scale:1}} transition={{delay:i*0.06, type:"spring", stiffness:300, damping:24}}>
                 <img src={s} alt="" style={{width:"100%", height:"100%", objectFit:"contain"}}/>
               </motion.div>
             ))}
           </div>
-          <motion.div style={{fontSize:"0.65rem", fontWeight:"600", color:"rgba(255,255,255,0.35)", letterSpacing:"0.1em", textTransform:"uppercase"}}
+          <motion.div style={{fontSize:"0.78rem", fontWeight:"600", color:"rgba(255,255,255,0.45)", letterSpacing:"0.1em", textTransform:"uppercase"}}
             initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.2}}>
             Ro'yxat
           </motion.div>
@@ -161,10 +161,10 @@ export default function RegistrationForm() {
             />
           </div>
           <div style={{padding:"0.625rem 1.25rem", display:"flex", justifyContent:"space-between", alignItems:"center"}}>
-            <span style={{fontSize:"0.7rem", color:"#9BA5B4", fontWeight:"500"}}>
+            <span style={{fontSize:"0.85rem", color:"#9BA5B4", fontWeight:"500"}}>
               {currentStep + 1} / {mobileSteps.length}
             </span>
-            <span style={{fontSize:"0.7rem", color:"#0D1117", fontWeight:"600"}}>
+            <span style={{fontSize:"0.85rem", color:"#0D1117", fontWeight:"600"}}>
               {step.hint}
             </span>
           </div>
@@ -184,7 +184,7 @@ export default function RegistrationForm() {
               <motion.div style={{marginBottom:"2rem"}}
                 initial={{y:8, opacity:0}} animate={{y:0, opacity:1}} transition={{delay:0.05}}>
                 <div style={{
-                  fontSize:"0.6rem", fontWeight:"600", color:"#BBC4D0",
+                  fontSize:"0.75rem", fontWeight:"600", color:"#BBC4D0",
                   letterSpacing:"0.12em", textTransform:"uppercase", marginBottom:"0.5rem"
                 }}>
                   Qadam {currentStep + 1}
@@ -236,10 +236,10 @@ export default function RegistrationForm() {
                             fontFamily:"'DM Serif Display', Georgia, serif",
                           }}/>
                       </div>
-                      {errors.phone && <p style={{color:"#EF4444", fontSize:"0.7rem", margin:"0.375rem 0 0", fontWeight:"500"}}>{errors.phone}</p>}
+                      {errors.phone && <p style={{color:"#EF4444", fontSize:"0.8rem", margin:"0.375rem 0 0", fontWeight:"500"}}>{errors.phone}</p>}
                     </div>
                     <div>
-                      <div style={{fontSize:"0.65rem", fontWeight:"600", color:"#BBC4D0", letterSpacing:"0.1em", textTransform:"uppercase", marginBottom:"0.875rem"}}>
+                      <div style={{fontSize:"0.78rem", fontWeight:"600", color:"#BBC4D0", letterSpacing:"0.1em", textTransform:"uppercase", marginBottom:"0.875rem"}}>
                         Ikkinchi telefon <span style={{fontWeight:"400"}}>(ixtiyoriy)</span>
                       </div>
                       <div style={{
@@ -409,7 +409,7 @@ export default function RegistrationForm() {
             <div style={{display:"flex", gap:"0.5rem", marginBottom: isTablet ? 0 : "2.5rem"}}>
               {["/logo1.png","/logo2.png","/logo3.png"].map((s,i) => (
                 <motion.div key={i}
-                  style={{width:"2.25rem", height:"2.25rem", borderRadius:"8px", background:"rgba(255,255,255,0.07)", border:"1px solid rgba(255,255,255,0.1)", overflow:"hidden", padding:"0.25rem"}}
+                  style={{width:"3.75rem", height:"3.75rem", borderRadius:"12px", background:"rgba(255,255,255,0.1)", border:"1px solid rgba(255,255,255,0.15)", overflow:"hidden", padding:"0.35rem"}}
                   initial={{opacity:0, y:8}} animate={{opacity:1, y:0}}
                   transition={{delay:0.1+i*0.06, type:"spring", stiffness:300, damping:22}}>
                   <img src={s} alt="" style={{width:"100%", height:"100%", objectFit:"contain"}}/>
@@ -423,7 +423,7 @@ export default function RegistrationForm() {
               <div style={{fontSize:"1.1rem", fontWeight:"300", color:"#fff", fontFamily:"'DM Serif Display', Georgia, serif", letterSpacing:"-0.01em"}}>
                 Yosh Bilimdonlar Olimpiadasi
               </div>
-              <div style={{fontSize:"0.62rem", color:"rgba(255,255,255,0.35)", marginTop:"0.25rem", letterSpacing:"0.1em", textTransform:"uppercase", fontWeight:"500"}}>
+              <div style={{fontSize:"0.78rem", color:"rgba(255,255,255,0.45)", marginTop:"0.25rem", letterSpacing:"0.1em", textTransform:"uppercase", fontWeight:"500"}}>
                 Ro'yxatdan o'tish
               </div>
             </div>
@@ -435,7 +435,7 @@ export default function RegistrationForm() {
                   initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.2}}>
                   Yosh<br/>Bilimdonlar
                 </motion.h1>
-                <motion.p style={{color:"rgba(255,255,255,0.35)", fontSize:"0.6rem", fontWeight:"500", letterSpacing:"0.12em", textTransform:"uppercase", margin:"0 0 2.5rem"}}
+                <motion.p style={{color:"rgba(255,255,255,0.45)", fontSize:"0.75rem", fontWeight:"500", letterSpacing:"0.12em", textTransform:"uppercase", margin:"0 0 2.5rem"}}
                   initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.28}}>
                   Olimpiadasi
                 </motion.p>
@@ -450,8 +450,8 @@ export default function RegistrationForm() {
                     <motion.div key={i}
                       style={{display:"flex", alignItems:"center", gap:"0.75rem"}}
                       initial={{opacity:0, x:-10}} animate={{opacity:1, x:0}} transition={{delay:0.3+i*0.06}}>
-                      <span style={{fontSize:"0.6rem", color:"rgba(255,255,255,0.2)", fontWeight:"600", fontVariantNumeric:"tabular-nums", minWidth:"1.25rem"}}>{num}</span>
-                      <span style={{fontSize:"0.8rem", color:"rgba(255,255,255,0.4)", fontWeight:"400"}}>{text}</span>
+                      <span style={{fontSize:"0.75rem", color:"rgba(255,255,255,0.3)", fontWeight:"600", fontVariantNumeric:"tabular-nums", minWidth:"1.25rem"}}>{num}</span>
+                      <span style={{fontSize:"0.92rem", color:"rgba(255,255,255,0.5)", fontWeight:"400"}}>{text}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -461,8 +461,8 @@ export default function RegistrationForm() {
               <motion.div style={{position:"relative", zIndex:1, width:"100%"}}
                 initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.7}}>
                 <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:"0.5rem"}}>
-                  <span style={{fontSize:"0.62rem", color:"rgba(255,255,255,0.2)", fontWeight:"500", letterSpacing:"0.05em"}}>To'ldirildi</span>
-                  <span style={{fontSize:"0.62rem", color:"rgba(255,255,255,0.5)", fontWeight:"600"}}>{fillPct}%</span>
+                  <span style={{fontSize:"0.75rem", color:"rgba(255,255,255,0.3)", fontWeight:"500", letterSpacing:"0.05em"}}>To'ldirildi</span>
+                  <span style={{fontSize:"0.75rem", color:"rgba(255,255,255,0.6)", fontWeight:"600"}}>{fillPct}%</span>
                 </div>
                 <div style={{height:"1px", background:"rgba(255,255,255,0.07)", borderRadius:"9999px", overflow:"hidden"}}>
                   <motion.div
@@ -511,7 +511,7 @@ export default function RegistrationForm() {
               <FlatField id="school" label="Maktab" placeholder="15-maktab" value={formData.school} onChange={handleChange} error={errors.school} delay={0.5} focused={focused} onFocus={setFocused} onBlur={()=>setFocused(null)}/>
 
               <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.54}}>
-                <label style={{display:"block", fontSize:"0.65rem", fontWeight:"600", color:"#9BA5B4", letterSpacing:"0.08em", textTransform:"uppercase", marginBottom:"0.5rem"}}>
+                <label style={{display:"block", fontSize:"0.78rem", fontWeight:"600", color:"#9BA5B4", letterSpacing:"0.08em", textTransform:"uppercase", marginBottom:"0.5rem"}}>
                   Sinf
                 </label>
                 <div style={{position:"relative"}}>
@@ -562,7 +562,7 @@ function FlatField({ id, label, placeholder, value, onChange, error, delay, focu
     <motion.div initial={{opacity:0, y:6}} animate={{opacity:1, y:0}} transition={{delay}}>
       <label htmlFor={id} style={{
         display:"block",
-        fontSize:"0.6rem",
+        fontSize:"0.75rem",
         fontWeight:"700",
         color: isFocused ? "#0D1117" : "#9BA5B4",
         letterSpacing:"0.1em",
@@ -603,7 +603,7 @@ function FlatField({ id, label, placeholder, value, onChange, error, delay, focu
       {error && (
         <motion.p
           initial={{opacity:0, y:-4}} animate={{opacity:1, y:0}}
-          style={{color:"#EF4444", fontSize:"0.65rem", margin:"0.3rem 0 0 0.125rem", fontWeight:"500", display:"flex", alignItems:"center", gap:"0.25rem"}}>
+          style={{color:"#EF4444", fontSize:"0.78rem", margin:"0.3rem 0 0 0.125rem", fontWeight:"500", display:"flex", alignItems:"center", gap:"0.25rem"}}>
           <svg width="10" height="10" viewBox="0 0 16 16" fill="none">
             <circle cx="8" cy="8" r="7" stroke="#EF4444" strokeWidth="1.5"/>
             <path d="M8 5v3.5M8 11v.5" stroke="#EF4444" strokeWidth="1.5" strokeLinecap="round"/>
@@ -619,7 +619,7 @@ function FlatPhoneField({ id, label, optional, value, onChange, error, delay, fo
   const isFocused = focused === id
   return (
     <motion.div initial={{opacity:0, y:6}} animate={{opacity:1, y:0}} transition={{delay}}>
-      <label style={{display:"block", fontSize:"0.65rem", fontWeight:"600", color:"#9BA5B4", letterSpacing:"0.08em", textTransform:"uppercase", marginBottom:"0.5rem"}}>
+      <label style={{display:"block", fontSize:"0.78rem", fontWeight:"600", color:"#9BA5B4", letterSpacing:"0.08em", textTransform:"uppercase", marginBottom:"0.5rem"}}>
         {label} {optional && <span style={{fontWeight:"400", textTransform:"none", letterSpacing:0, color:"#C4CBD8"}}>(ixtiyoriy)</span>}
       </label>
       <div style={{
@@ -635,7 +635,7 @@ function FlatPhoneField({ id, label, optional, value, onChange, error, delay, fo
             padding:"0.625rem 0", color:"#0D1117", fontSize:"0.9rem", fontWeight:"500",
           }}/>
       </div>
-      {error && <motion.p initial={{opacity:0, y:-4}} animate={{opacity:1, y:0}} style={{color:"#EF4444", fontSize:"0.65rem", margin:"0.3rem 0 0", fontWeight:"500"}}>{error}</motion.p>}
+      {error && <motion.p initial={{opacity:0, y:-4}} animate={{opacity:1, y:0}} style={{color:"#EF4444", fontSize:"0.78rem", margin:"0.3rem 0 0", fontWeight:"500"}}>{error}</motion.p>}
     </motion.div>
   )
 }

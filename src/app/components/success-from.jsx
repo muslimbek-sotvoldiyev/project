@@ -67,7 +67,7 @@ export default function SuccessMessage() {
             initial={{opacity:0, y:8}} animate={{opacity:1, y:0}} transition={{delay:0.28}}>
             Yuborildi
           </motion.h1>
-          <motion.p style={{color:"rgba(255,255,255,0.35)", fontSize:"0.8rem", margin:0, position:"relative", zIndex:1}}
+          <motion.p style={{color:"rgba(255,255,255,0.45)", fontSize:"0.9rem", margin:0, position:"relative", zIndex:1}}
             initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.38}}>
             So'rovingiz muvaffaqiyatli qabul qilindi
           </motion.p>
@@ -78,7 +78,7 @@ export default function SuccessMessage() {
           <motion.div
             style={{background:"#fff", borderRadius:"1rem", padding:"1.25rem", border:"1px solid #E8EBF0", marginBottom:"1rem"}}
             initial={{opacity:0, y:12}} animate={{opacity:1, y:0}} transition={{delay:0.45}}>
-            <div style={{fontSize:"0.65rem", fontWeight:"600", color:"#9BA5B4", letterSpacing:"0.1em", textTransform:"uppercase", marginBottom:"1rem"}}>
+            <div style={{fontSize:"0.8rem", fontWeight:"600", color:"#9BA5B4", letterSpacing:"0.1em", textTransform:"uppercase", marginBottom:"1rem"}}>
               Oxford O'quv Markazi
             </div>
             <div style={{display:"flex", flexDirection:"column"}}>
@@ -90,7 +90,7 @@ export default function SuccessMessage() {
                 }}>
                   <div style={{color:"#9BA5B4", flexShrink:0}}>{item.icon}</div>
                   <div>
-                    <div style={{fontSize:"0.62rem", color:"#BBC4D0", fontWeight:"500", textTransform:"uppercase", letterSpacing:"0.07em", marginBottom:"0.1rem"}}>{item.label}</div>
+                    <div style={{fontSize:"0.75rem", color:"#BBC4D0", fontWeight:"500", textTransform:"uppercase", letterSpacing:"0.07em", marginBottom:"0.1rem"}}>{item.label}</div>
                     <div style={{fontSize:"0.85rem", color:"#1A2332", fontWeight:"500"}}>{item.value}</div>
                   </div>
                 </div>
@@ -199,7 +199,7 @@ export default function SuccessMessage() {
                 initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.3}}>
                 Muvaffaqiyatli!
               </motion.h2>
-              <motion.p style={{color:"rgba(255,255,255,0.3)", fontSize:"0.78rem", lineHeight:1.6, margin:0}}
+              <motion.p style={{color:"rgba(255,255,255,0.4)", fontSize:"0.88rem", lineHeight:1.6, margin:0}}
                 initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.38}}>
                 So'rovingiz qabul qilindi. Tez orada mutaxassislarimiz siz bilan bog'lanishadi.
               </motion.p>
@@ -211,7 +211,7 @@ export default function SuccessMessage() {
         <div style={{flex:1, minWidth:0, padding: isTablet ? "2rem" : "2.5rem 2.75rem", display:"flex", flexDirection:"column", justifyContent:"space-between"}}>
           <div>
             <motion.div style={{marginBottom:"1.5rem"}} initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.3}}>
-              <div style={{fontSize:"0.65rem", fontWeight:"600", color:"#9BA5B4", letterSpacing:"0.1em", textTransform:"uppercase", marginBottom:"0.375rem"}}>O'quv markazi</div>
+              <div style={{fontSize:"0.8rem", fontWeight:"600", color:"#9BA5B4", letterSpacing:"0.1em", textTransform:"uppercase", marginBottom:"0.375rem"}}>O'quv markazi</div>
               <h3 style={{fontSize:"1rem", fontWeight:"500", color:"#0D1117", margin:0, letterSpacing:"-0.01em"}}>Oxford O'quv Markazi</h3>
             </motion.div>
 
@@ -228,7 +228,7 @@ export default function SuccessMessage() {
                   initial={{opacity:0, x:-8}} animate={{opacity:1, x:0}} transition={{delay:0.44+i*0.07}}>
                   <div style={{color:"#9BA5B4", flexShrink:0}}>{item.icon}</div>
                   <div>
-                    <div style={{fontSize:"0.6rem", color:"#BBC4D0", fontWeight:"600", textTransform:"uppercase", letterSpacing:"0.08em", marginBottom:"0.1rem"}}>{item.label}</div>
+                    <div style={{fontSize:"0.75rem", color:"#BBC4D0", fontWeight:"600", textTransform:"uppercase", letterSpacing:"0.08em", marginBottom:"0.1rem"}}>{item.label}</div>
                     <div style={{fontSize:"0.85rem", color:"#1A2332", fontWeight:"500"}}>{item.value}</div>
                   </div>
                 </motion.div>
